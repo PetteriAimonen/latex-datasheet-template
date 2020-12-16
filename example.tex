@@ -107,6 +107,7 @@ You can build the PDF document using command \texttt{latexmk -pdf}.
 All specifications are in $-40\degree C \leq T_A \leq 85\degree C$ unless otherwise noted.
 
 \begin{table}[h]
+\begin{threeparttable}
 \caption{Example Data Sheet Specifications}
 \begin{tabularx}{\textwidth}{l | c | c c c | c | X}
     \thickhline
@@ -116,10 +117,13 @@ All specifications are in $-40\degree C \leq T_A \leq 85\degree C$ unless otherw
     Page width  & $p_w$ & 20.9 & 21.0 & 21.1 & cm & \multirow{2}{*}{Standard A4 paper} \\
     Page height & $p_h$ & 29.6 & 29.7 & 29.8 & cm &  \\
     \hline
-    Insulation voltage & $E_{max}$\footnotemark[1] & & 1 & & kV & \\
+    Insulation voltage & $E_{max}$\tnote{1} & & 1 & & kV & \\
     \thickhline
 \end{tabularx}
-\footnotetext[1]{Based on characterization data, not tested in production.}
+\begin{tablenotes}
+\item[1]{Based on characterization data, not tested in production.}
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 \section{Absolute Maximum Ratings}

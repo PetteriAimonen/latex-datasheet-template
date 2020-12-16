@@ -37,6 +37,7 @@
 \RequirePackage{multirow}
 \RequirePackage{multicol}
 \RequirePackage{tabularx}
+\RequirePackage{threeparttable}
 
 % Align figure and table captions to left.
 \RequirePackage[font=bf, skip=5pt, justification=raggedright, format=hang, singlelinecheck=off]{caption}
